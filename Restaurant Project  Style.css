@@ -1,0 +1,313 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+  width: 100%;
+}
+
+.row::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+
+          /* header style stard */
+header {
+  background-color: #24a19c;
+  padding: 0% 1%;
+  text-align: center;
+}
+.logo{
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.logo i{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  
+}
+nav ul li{
+  display: block;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  transition: .4s;
+}
+nav ul li a:hover{
+  border-radius: 10px;
+  background-color: black;
+}
+          /* header style end */
+
+          /* banner style stard */
+
+.banner-contents{
+  background-image: url("jason-leung-poI7DelFiVA-unsplash.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-contents{
+  padding: 15px 10px;
+  text-align: center;
+}
+.banner-contents h1{
+  width: 100%;
+  margin: 15px auto;
+  background: rgba(238, 255, 0, 0.637);
+  font-size: 3rem;
+  border-radius: 5px;
+  padding: 10px;
+  color:rgb(35, 32, 196);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.banner-contents p{
+  width: 300px;
+  margin: 15px auto;
+  background:rgba(0, 128, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.btn{
+  width:160px;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background:rgb(0, 128, 53) ;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+
+          /* banner style end */
+
+          /* about srart */
+#about-us{
+  padding: 1%;
+}
+.about-us-content{
+  text-align: center;
+}
+.about-us-content h3{
+font-size: 2rem;
+margin-bottom: 10px;
+font-weight: bolder;
+}
+.about-us-content p{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  
+  }
+          /* about end */
+        /* foods menu start */
+#food-menu{
+  padding: 1%;
+}
+.card-body{
+  text-align: center;
+}
+.card-body img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.item-desc{
+  background: rgb(165,164,164);
+}
+.item-name{
+  background: green;
+  color: white;
+  padding: 10px;
+}
+.item-desc > p{
+  font-size: 0.8rem;
+  padding: 10px;
+  font-weight: bolder;
+}
+.card{
+  transition: 0.4s;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 10px black;
+
+}
+        /* foods menu end */
+
+        /* contact menu style start */
+#contact{
+  padding: 1%;
+  background: #595b83;
+
+}
+.cobtact-details{
+  color: white;
+  text-align: center;
+  padding: 20px o;
+}
+.map{
+  width: 100%;
+  height: 250px;
+}
+.cobtact-details p, address{
+  font-size: 0.8rem;
+}
+        /* contact menu style end */
+
+        /* footer style start */
+footer{
+  padding: 1%;
+  color: white;
+  background: #060930;
+}
+footer p{
+  line-height: 32px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.social-menus{
+  text-align: center;
+}
+.icon-style{
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  border:1px solid white ;
+  margin: 0 10px;
+  transition: 0.4s;
+  text-align: center;
+}
+.icon-style:hover{
+  background-color: gray;
+  transform: scale(1.2);
+
+}
+        /* footer end */
+
+          @media (min-width: 600px) {
+            /* For mobile: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+          }
+        @media (min-width: 768px) {
+            /* For tablets: */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+          }
+          @media (min-width: 992px) {
+            .logo{
+              text-align: left;
+            }
+            nav ul{
+              text-align: right;
+            }
+            nav ul li{
+              display: inline-block;
+            }
+            nav ul li a{
+              display: inline-block;
+              transition: 0.4s;
+            }
+
+            nav ul li a:hover{
+              background-color: transparent;
+              transform: scale(1.2);
+              text-decoration: underline;
+              text-decoration-color: red;
+              border-radius: 0;
+            }
+                    /* banner start */
+            #banner-section{
+              position: relative;
+              height: 100%;
+            }
+            #banner-contents{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,50%);
+            }
+                    /* banner end */
+            footer p{
+              text-align: left;
+            }
+            .social-menus{
+              text-align: right;
+            }
+           
+            /* For dectoe: */
+            .col-b-1 {width: 8.33%;}
+            .col-b-2 {width: 16.66%;}
+            .col-b-3 {width: 25%;}
+            .col-b-4 {width: 33.33%;}
+            .col-b-5 {width: 41.66%;}
+            .col-b-6 {width: 50%;}
+            .col-b-7 {width: 58.33%;}
+            .col-b-8 {width: 66.66%;}
+            .col-b-9 {width: 75%;}
+            .col-b-10 {width: 83.33%;}
+            .col-b-11 {width: 91.66%;}
+            .col-b-12 {width: 100%;}
+          }
